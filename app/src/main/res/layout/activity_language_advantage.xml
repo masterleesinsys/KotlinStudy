@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/subpage_bg"
+    android:orientation="vertical"
+    tools:context="activity.LanguageAdvantageActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_titleBar"
+        android:background="@color/translucence_40"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="返回"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="语言优势说明"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_help"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:text="帮助"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:background="@color/translucence_40"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/tv_explain"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+        <TextView
+            android:text="试试上下滑动"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@color/translucence_40"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:ignore="HardcodedText" />
+
+</LinearLayout>

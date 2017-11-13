@@ -1,16 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
     android:orientation="vertical"
-    tools:context="fly.testapplication.cm.activity.MainActivity">
+    tools:context="activity.MainActivity">
 
-   <TextView
-       android:id="@+id/tv_show"
-       android:text="@string/app_name"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/rl_titleBar"
+        android:background="#66000000"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="返回"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="主页"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_help"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:text="帮助"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/descriptionOfLanguageAdvantage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_bg"
+            android:gravity="center"
+            android:text="语言优势说明"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/initialConfigurationInstructions"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_bg"
+            android:gravity="center"
+            android:text="初始配置说明"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/basicControlsAreIntroducedForUse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_bg"
+            android:gravity="center"
+            android:text="基础控件介绍使用"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/advancedControlsAreIntroducedForUse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_bg"
+            android:gravity="center"
+            android:text="高级控件介绍使用"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/basicFunctionsAreIntroduced"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_bg"
+            android:gravity="center"
+            android:text="基础函数介绍使用"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/advancedFunctionsAreIntroducedForUse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_bg"
+            android:gravity="center"
+            android:text="高级函数介绍使用"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/flock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@android:color/holo_blue_dark"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/skyBlue"
+        android:gravity="center"
+        android:text="欢迎来到Kotlin的世界！"
+        android:textColor="@color/tc_default"
+        tools:ignore="HardcodedText" />
 
 </LinearLayout>
