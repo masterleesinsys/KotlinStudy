@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+aapply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
@@ -7,8 +7,8 @@ android {
     buildToolsVersion "26.0.0"
 
     defaultConfig {
-        applicationId "fly.testapplication.cm"
-        minSdkVersion 15
+        applicationId "fly.kotlinstudy.cm"
+        minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -25,6 +25,11 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
+    repositories {
+        maven {
+            url "https://jitpack.io"
+        }
+    }
 }
 
 dependencies {
@@ -32,12 +37,17 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+     dependencies {
+        compile 'com.android.support:recyclerview-v7:25.2.0'
+        compile 'com.github.luckyandyzhang:CleverRecyclerView:1.0.0'
+    }
     // Anko
     compile "org.jetbrains.anko:anko-common:$anko_version"
     compile 'org.jetbrains.anko:anko-sdk15:0.8.2' // sdk19, sdk21, sdk23 are also available
     compile 'org.jetbrains.anko:anko-support-v4:0.8.2' // In case you need support-v4 bindings
     compile 'org.jetbrains.anko:anko-appcompat-v7:0.8.2' // For appcompat-v7 bindings
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile 'org.xutils:xutils:3.5.0'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
@@ -45,3 +55,4 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
