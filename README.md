@@ -1,6 +1,5 @@
 # KotlinStudy
 工欲善其事,必先利其器!
-提供Android支持的最新语言kotlin，供众多开发学习借鉴。
 
 Kotlin 是一个基于 JVM 的新的编程语言，由 JetBrains 开发。
 Kotlin可以编译成Java字节码，也可以编译成JavaScript，方便在没有JVM的设备上运行。
